@@ -38,7 +38,11 @@ If you're running Flowise in a Docker container, use the following command:
 docker exec -it FLOWISE_CONTAINER_NAME pnpm user --email "admin@admin.com" --password "myPassword1!"
 ```
 
-Replace `FLOWISE_CONTAINER_NAME` with your actual Flowise container name.
+In case you have issues running pnpm within docker, you can also use the following npx command:
+
+```bash
+docker exec -it FLOWISE_CONTAINER_NAME sh -c "npx flowise user admin@admin.com myPassword1!" 
+```
 
 ### Parameters
 
